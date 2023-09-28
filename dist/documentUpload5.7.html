@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="output.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>Index</title>
+  </head>
+  <body>
+    <div class="container_div">
+        <!--sidebar start-->
+      <div class="navigation">
+        <ul>
+          <li class="pt-6 p-2"><img src="image/sidebar-logo.png" alt="" /></li>
+          <li class="" >
+            <a href="" >
+              <span class="icon"
+                ><img src="image/icon/New-File.png" alt=""
+              /></span>
+              <span class="title">New File</span>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <span class="icon"
+                ><img src="image/icon/UnW-360.png" alt=""
+              /></span>
+              <span class="title">UW360</span>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <span class="icon"
+                ><img src="image/icon/Update-incomplete-file.png" alt=""
+              /></span>
+              <span class="title">Update Incomplete File</span>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <span class="icon">
+                <img src="image/icon/Check-Status.png" alt=""
+              /></span>
+              <span class="title">Check Status</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <!--sidebar is end-->
+
+      <!--main-->
+      <div class="main">
+        <!--topbar start-->
+        <div class="topbar   flex justify-between items-center">
+          <div class="toggle">
+            <img
+              src="image/icon/arrow-left-line.svg"
+              class="w-10 h-10"
+              alt="Toggle"
+            />
+          </div>
+          <div class="topbar-right flex gap-4">
+            <img
+              src="image/icon/Notification.png"
+              class="notification"
+              alt="Notification"
+            />
+            <img
+              src="image/icon/profile-icon.png"
+              class="w-10 h-10"
+              alt="Profile"
+            />
+        
+            
+          </div>
+        </div>
+
+        <!--topbar end-->
+        <div class="bg-white mt-2 w-full  px-3 ">
+          <div class="grid grid-cols-2 justify-between">
+            <ul class="flex gap-3  text-lg text-gray-500">
+              <li><img src="image/icon/arrow-left.png" alt="" /></li>
+              <li><h1 class="">Create New File</h1></li>
+            </ul>
+           <div class="flex justify-end">
+            <ul class="flex mr-8 text-gray-700 justify-end w-[273px]">
+              <li><a href="#">SLI/</a></li>
+              <li><a href="#">New File/</a></li>
+              <li><a href="#">Create New File</a></li>
+            </ul>
+           </div>
+          </div>
+          </div>
+
+        <!--other content start-->
+        <div class="grid grid-cols-1 gap-2 mt-1 mb-1 p-3 content-div h-[84vh]  lg:grid-cols-1 sm:grid-cols-1 md:grid-cols-1 xl:grid-cols-2 m-4">
+            <!-- Scan Image section -->
+            <div class="p-2 h-[80vh]">
+              
+
+                <div class="   mx-1">
+                  <div class="bg-blue-50 px-2 py-1">
+                    <div class="font-medium uppercase">
+                        <h1>Proposal Form</h1>
+                    </div>
+                </div>
+                
+                    <form id="wizardForm" action="submit_form.php" method="post" class="px-2 py-1">
+                        <!-- Application Date -->
+                   
+                        <div class=" w-full h-[9vh] mt-1  xs:w-full md:w-[350px] lg:w-[400px] xl:w-[500px] 2xl:w-[516px]">
+                    <label for="">Applicant Name</label>
+                    <input type="text" class="w-full py-1 px-4  border-stone-300 mt-1" placeholder="Applicant Name">
+    
+                </div>
+    
+                <div class=" w-full h-[9vh] mt-1  xs:w-full md:w-[350px] lg:w-[400px] xl:w-[500px] 2xl:w-[516px]">
+                    <label for="">Applicant Mother Name</label>
+                    <input type="text" class="w-full  px-4  py-1 border-stone-300 mt-1" placeholder="Applicant Mother Name">
+    
+                </div>
+                <div class=" w-full h-[9vh] mt-1  xs:w-full md:w-[350px] lg:w-[400px] xl:w-[500px] 2xl:w-[516px]">
+                    <label for="">Date of Birth</label>
+                    <input type="text" class="w-full  px-4 py-1  border-stone-300 mt-1" placeholder="Date of Birth">
+    
+                </div>
+                <div class=" w-full h-[9vh] mt-1  xs:w-full md:w-[350px] lg:w-[400px] xl:w-[500px] 2xl:w-[516px]">
+                    <label for="">Identity Document Type</label>
+                    <input type="text" class="w-full  px-4 py-1  border-stone-300 mt-1" placeholder="Identity Document Type">
+    
+                </div>
+                <div class=" w-full h-[9vh] mt-1  xs:w-full md:w-[350px] lg:w-[400px] xl:w-[500px] 2xl:w-[516px]">
+                    <label for="">Identity Doucumet Id</label>
+                    <input type="text" class="w-full  px-4  py-1 border-stone-300 mt-1" placeholder="Identity Document Id">
+    
+                </div>
+                <div class=" w-full h-[9vh] mt-1  xs:w-full md:w-[350px] lg:w-[400px] xl:w-[500px] 2xl:w-[516px]">
+                    <label for="">Product No</label>
+                    <input type="text" class="w-full  px-4 py-1  border-stone-300 mt-1" placeholder="Product No">
+    
+                </div>
+                <div class=" w-full h-[9vh] my-1  xs:w-full md:w-[350px] lg:w-[400px] xl:w-[500px] 2xl:w-[516px]">
+                    <label for="">Sum Asuured</label>
+                    <input type="text" class="w-full  px-4  py-1 border-stone-300 mt-1" placeholder="Sum Assured">
+    
+                </div>
+            
+                        <!-- Applicant's Name -->
+                        
+
+                       
+
+                   
+
+                        <!-- Add other fields here -->
+
+                        <div class="flex items-center justify-end space-x-2  h-[5vh]">
+                            <a href="#" class="px-3 py-2 text-black border rounded-full background-top">1</a>
+                            <a href="#" class="px-3 py-2 text-black border rounded-full">2</a>
+                            <a href="#" class="px-3 py-2 text-black border rounded-full">3</a>
+                            <a href="#" class="px-3 py-2 text-black border rounded-full">4</a>
+                            <a href="#" class="px-3 py-2 text-black border rounded-full">5</a>
+                            <a href="#" class="px-3 py-2 text-black border rounded-full">12</a>
+                            <a href="#" class="px-3 py-2 text-black border rounded-full">Next</a>
+                        </div>
+
+
+                        <div class="h-[4vh]">
+                          <button class="background-top text-white px-3  rounded-sm">Submit</button>
+                      </div>
+
+                    </form>
+             
+                </div>
+              
+            </div>
+            <!-- Scan image section -->
+            <div>
+               <!-- Scan image section -->
+           
+<div class="h-[77vh] w-full p-2 overflow-y-auto ">
+  <div class="bg-blue-50 px-2 py-1">
+    <div class="font-medium uppercase">
+        <h1>Ocr Image</h1>
+    </div>
+</div>
+
+  <img class="w-full h-[1000px]" src="image/ocr-form.jpeg" alt="OCR Form Image">
+</div>
+
+        </div>
+        <!-- Submit button -->
+       
+    </div>
+
+
+
+
+        <!--other content end-->
+      </div>
+      <!--main end-->
+    </div>
+
+    <script src="js/index.js"></script>
+  </body>
+</html>
