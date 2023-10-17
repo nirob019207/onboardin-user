@@ -3,106 +3,611 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nextgen--design</title>
     <link rel="stylesheet" href="output.css" />
     <link rel="stylesheet" href="css/style.css" />
+  <style>
+   .containe {
+ 
+    width: 100%;
+    height: 100vh;
 
-    <title>Index</title>
+    animation: animate 16s ease-in-out infinite;
+   
+    background-size: cover;
+    min-height: 100%;
+    
+   
+}
+.outer{
+  height: 90%;
+}
+
+@keyframes animate {
+    0%, 100% {
+        background-image: url(image/1.jpg);
+    }
+    25% {
+        background-image: url(image/2.jpg);
+    }
+    50% {
+        background-image: url(image/3.jpg);
+    }
+    75% {
+        background-image: url(image/4.jpg);
+    }
+}
+  </style>
   </head>
   <body>
-    <div class="container_div">
-        <!--sidebar start-->
-      <div class="navigation">
-        <ul>
-          <li class="pt-6 p-2"><img src="image/sidebar-logo.png" alt="" /></li>
-          <li class="" >
-            <a href="" >
-              <span class="icon"
-                ><img src="image/icon/New-File.png" alt=""
-              /></span>
-              <span class="title">New File</span>
-            </a>
-          </li>
-          <li>
-            <a href="">
-              <span class="icon"
-                ><img src="image/icon/UnW-360.png" alt=""
-              /></span>
-              <span class="title">UW360</span>
-            </a>
-          </li>
-          <li>
-            <a href="">
-              <span class="icon"
-                ><img src="image/icon/Update-incomplete-file.png" alt=""
-              /></span>
-              <span class="title">Update Incomplete File</span>
-            </a>
-          </li>
-          <li>
-            <a href="">
-              <span class="icon">
-                <img src="image/icon/Check-Status.png" alt=""
-              /></span>
-              <span class="title">Check Status</span>
-            </a>
-          </li>
-        </ul>
-      </div>
+    
 
-      <!--sidebar is end-->
+   
 
-      <!--main-->
-      <div class="main">
-        <!--topbar start-->
-        <div class="topbar   flex justify-between items-center">
-          <div class="toggle">
-            <img
-              src="image/icon/arrow-left-line.svg"
-              class="w-10 h-10"
-              alt="Toggle"
-            />
-          </div>
-          <div class="topbar-right flex gap-4">
-            <img
-              src="image/icon/Notification.png"
-              class="notification"
-              alt="Notification"
-            />
-            <img
-              src="image/icon/profile-icon.png"
-              class="w-10 h-10"
-              alt="Profile"
-            />
+    <nav class="bg-white p-[15px] shadow-lg sticky top-0">
+      <div class="mx-auto  px-2 sm:px-6 lg:px-8">
+        <div class="relative flex h-16 items-center justify-between">
+          <div class="absolute inset-y-0 left-0 flex items-center ">
+            <!-- Mobile menu button-->
            
-            
+          </div>
+          <div
+            class="flex flex-1 items-center justify-center lg:items-stretch lg:justify-center"
+          >
+            <div class="flex flex-shrink-0 items-center">
+             
+            </div>
+            <div class="hidden sm:ml-6 lg:block">
+                <div class="flex space-x-4">
+                  <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+                 
+
+
+
+                  <ul class="flex items-center justify-center gap-16 text-sm font-bold">
+                    <a href="index.html"><li class="text-green-700 hover:text-blue-900 hover:border-b-2 transition ease-in-out border-gray-800">Home</li></a>
+
+                    <li class="relative group text-green-700 hover:text-blue-900 hover:border-b-2 transition ease-in-out border-gray-800">
+                        <a href="#" class="hover:text-blue-900">Expertise</a>
+                        <ul class="absolute hidden bg-gray-200 p-2 divide-y divide-blue-200 w-28 -ml-16 text-gray-700 mt-2 space-y-2 group-hover:block delay-200">
+                          <li class="hover:bg-gray-700 p-1"><a href="#" class=" hover:text-white">Super Market</a></li>
+                            <li class="hover:bg-gray-700 p-1"><a href="#" class=" hover:text-white">Grocery</a></li>
+                            <li class="hover:bg-gray-700 p-1"><a href="#" class=" hover:text-white">Restraunt</a></li>
+                            <li class="hover:bg-gray-700 p-1"><a href="#" class=" hover:text-white">C Store</a></li>
+                        </ul>
+                    </li>
+                    <li class="relative group text-green-700 hover:text-blue-900 hover:border-b-2 transition ease-in-out border-gray-800">
+                      <a href="#" class="hover:text-blue-900">Services</a>
+                      <ul class="absolute hidden bg-gray-200 p-2 text-gray-700 mt-2 divide-y divide-blue-200 space-y-2 w-32 -ml-8 group-hover:block delay-200">
+                        <li class="hover:bg-gray-700 p-1"><a href="#" class=" hover:text-white">Design</a></li>
+                        <li class="hover:bg-gray-700 p-1"><a href="#" class=" hover:text-white">Install</a></li>
+                            <li class="hover:bg-gray-700 p-1"><a href="#" class=" hover:text-white">Municipal Approval</a></li>
+                            <li class="hover:bg-gray-700 p-1"><a href="#" class=" hover:text-white">Site survey</a></li>
+                            <li class="hover:bg-gray-700 p-1"><a href="#" class=" hover:text-white">Renovation and Remodeling</a></li>
+                            <li class="hover:bg-gray-700 p-1"><a href="#" class=" hover:text-white">Equipment</a></li>
+                        </ul>
+                    </li>
+                    <li class="relative group text-green-700 hover:text-blue-900 hover:border-b-2 transition ease-in-out border-gray-800">
+                      <a href="#" class="hover:text-blue-900">About</a>
+                      <ul class="absolute hidden bg-gray-200 p-2 text-gray-700 w-24 divide-y divide-blue-200 -ml-4 mt-2 space-y-2 group-hover:block delay-200">
+                        <li class="hover:bg-gray-700 p-1"><a href="#" class=" hover:text-white">Our Company</a></li>
+                            <li class="hover:bg-gray-700 p-1"><a href="#" class=" hover:text-white">Carrer</a></li>
+                            
+                        </ul>
+                    </li>
+                    <a href="photo.html"><li class="text-green-700 hover:text-blue-900 transition ease-in-out">Contact</li></a>
+
+                </ul>
+                
+                </div>
+              </div>
+              
+          </div>
+          <div
+            class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0"
+          >
+            <!-- Profile dropdown -->
+            <div class="relative ml-3">
+              <div class="flex items-center gap-3">
+               
+              <a href=""><span class="bg-orange-400 py-3 px-2 hidden text-white rounded lg:block">0172349595</span></a>
+              <button
+              type="button"
+              class="relative inline-flex items-center justify-center lg:hidden rounded-md p-2 text-gray-400 hover:bg-white hover:animate-pulse hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+              aria-controls="mobile-menu"
+              aria-expanded="false"
+            >
+              <span class="absolute -inset-0.5"></span>
+              
+              <!--
+            Icon when menu is closed.
+
+            Menu open: "hidden", Menu closed: "block"
+          -->
+           <img src="image/menu.png" alt="">
+              <!--
+            Icon when menu is open.
+
+            Menu open: "block", Menu closed: "hidden"
+          -->
+              
+            </button>
+              </div>
+            </div>
           </div>
         </div>
-
-        <!--topbar end-->
-        <div class="bg-white mt-2 w-full  px-3 ">
-          <div class="flex justify-between xs:gap-3">
-            <ul class="flex gap-3  text-lg text-gray-500">
-              <li><img src="image/icon/arrow-left.png" alt="" /></li>
-              <li><h1 class="">Create New File</h1></li>
-            </ul>
-            <ul class="flex mr-8 text-gray-700 w-[273px]">
-              <li><a href="#">SLI/</a></li>
-              <li><a href="#">New File/</a></li>
-              <li><a href="#">Create New File</a></li>
-            </ul>
-          </div>
-          </div>
-
-        <!--other content start-->
-
-
-
-
-        <!--other content end-->
       </div>
-      <!--main end-->
+
+      <!-- Mobile menu, show/hide based on menu state. -->
+     <!-- Mobile Menu -->
+<div class="lg:hidden" id="mobile-menu">
+  <div class="space-y-1 px-2 pb-3 pt-2">
+    <!-- Home Menu Item -->
+    <a
+      href="index.html"
+      class="menu-item text-gray-700 hover:bg-gray-300 hover:shadow-2xl hover:text-black block rounded-md px-3 py-2 text-base font-medium"
+      aria-current="page"
+    >Home</a>
+
+    <!-- Expertise Menu Item with Submenu -->
+    <div class="relative group">
+      <a
+        href="#"
+        class="menu-item text-gray-700 hover:bg-gray-300 hover:shadow-2xl hover:text-black block rounded-md px-3 py-2 text-base font-medium"
+      >Expertise</a>
+
+      <!-- Submenu for Expertise -->
+      <ul class="hidden bg-gray-200 p-2 divide-y divide-blue-200 w-full text-gray-700 mt-2 space-y-2">
+        <li><a href="#"  class="menu-item text-gray-700 hover:text-white hover:bg-gray-700 hover:shadow-2xl  block rounded-md px-3 py-2 text-base font-medium">Super Market</a></li>
+        <li><a href="#"  class="menu-item text-gray-700 hover:text-white hover:bg-gray-700 hover:shadow-2xl  block rounded-md px-3 py-2 text-base font-medium">Grocery</a></li>
+        <li><a href="#"  class="menu-item text-gray-700 hover:text-white hover:bg-gray-700 hover:shadow-2xl  block rounded-md px-3 py-2 text-base font-medium">Restaurant</a></li>
+        <li><a href="#"  class="menu-item text-gray-700 hover:text-white hover:bg-gray-700 hover:shadow-2xl  block rounded-md px-3 py-2 text-base font-medium">C Store</a></li>
+      </ul>
     </div>
 
-    <script src="js/index.js"></script>
+    <!-- Services Menu Item with Submenu -->
+    <div class="relative group">
+      <a
+        href="#"
+        class="menu-item text-gray-700 hover:bg-gray-300 hover:shadow-2xl hover:text-black block rounded-md px-3 py-2 text-base font-medium"
+      >Services</a>
+
+      <!-- Submenu for Services -->
+      <ul class="hidden bg-gray-200 p-2 divide-y divide-blue-200 w-full text-gray-700 mt-2 space-y-4">
+        <li><a href="#"  class="menu-item text-gray-700 hover:text-white hover:bg-gray-700 hover:shadow-2xl  block rounded-md px-3 py-2 text-base font-medium">Design</a></li>
+        <li><a href="#"  class="menu-item text-gray-700 hover:text-white hover:bg-gray-700 hover:shadow-2xl  block rounded-md px-3 py-2 text-base font-medium">Install</a></li>
+        <li><a href="#"  class="menu-item text-gray-700 hover:text-white hover:bg-gray-700 hover:shadow-2xl  block rounded-md px-3 py-2 text-base font-medium">Municipal Approval</a></li>
+        <li><a href="#"  class="menu-item text-gray-700 hover:text-white hover:bg-gray-700 hover:shadow-2xl  block rounded-md px-3 py-2 text-base font-medium">Site survey</a></li>
+        <li><a href="#"  class="menu-item text-gray-700 hover:text-white hover:bg-gray-700 hover:shadow-2xl  block rounded-md px-3 py-2 text-base font-medium">Renovation and Remodeling</a></li>
+        <li><a href="# "  class="menu-item text-gray-700 hover:text-white hover:bg-gray-700 hover:shadow-2xl  block rounded-md px-3 py-2 text-base font-medium">Equipment</a></li>
+      </ul>
+    </div>
+
+    <!-- About Menu Item with Submenu -->
+    <div class="relative group">
+      <a
+        href="#"
+        class="menu-item text-gray-700 hover:bg-gray-300 hover:shadow-2xl hover:text-black block rounded-md px-3 py-2 text-base font-medium"
+      >About</a>
+
+      <!-- Submenu for About -->
+      <ul class="hidden bg-gray-200 p-2 divide-y divide-blue-200 w-full text-gray-700 mt-2 space-y-2">
+        <li><a href="#"         class="menu-item text-gray-700 hover:bg-gray-700 hover:shadow-2xl hover:text-white block rounded-md px-3 py-2 text-base font-medium"
+          >Our Company</a></li>
+        <li><a href="#"         class="menu-item text-gray-700 hover:text-white hover:bg-gray-700 hover:shadow-2xl  block rounded-md px-3 py-2 text-base font-medium"
+          >Career</a></li>
+      </ul>
+    </div>
+
+    <!-- Contact Menu Item -->
+    <a
+      href="photo.html"
+      class="menu-item text-gray-700 hover:bg-gray-300 hover:shadow-2xl hover:text-black block rounded-md px-3 py-2 text-base font-medium"
+    >Contact</a>
+  </div>
+</div>
+
+<!-- JavaScript to Toggle Submenus -->
+
+
+    </nav>
+
+
+    <!--nav end-->
+   <!-- Slider start -->
+
+
+   <div class="containe opacity-[9rem] overflow-hidden p-4">
+    <div class="outer">
+      <div class="grid grid-cols-1 gap-8  xs:grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 2xl:grid-cols-2 mx-auto items-center p-3">
+        <div class="flex items-center justify-center pt-8">
+<div>
+  
+<p class=""><span class=" text-white text-[45px] ">Smart Design <br>
+  Scalable Manufacturing <br>
+
+ <span class="text-orange-800  font-bold text-[45px] "> Retail Interior Experts</span>
+</span></p>
+
+<div class="mt-6 flex gap-4">
+  <button class="group relative h-12 w-48  rounded-lg bg-white text-lg shadow">
+    <div class="absolute inset-0 w-3 bg-orange-700 transition-all duration-[250ms] ease-out group-hover:w-full"></div>
+    <span class="relative text-black group-hover:text-white">Connect Us</span>
+  </button>
+  <button
+  type="button"
+  class="inline-block rounded border-2 hover:an border-primary-100 px-6 py-2 text-sm font-medium uppercase leading-normal text-white transition duration-150 ease-in-out hover:border-primary-accent-100 hover:bg-green-800 hover:bg-opacity-100 focus:border-primary-accent-100 focus:outline-none focus:ring-0 active:border-primary-accent-200 dark:text-primary-100 dark:hover:bg-neutral-100 dark:hover:bg-opacity-10"
+  data-te-ripple-init>
+  Secondary
+</button>
+</div>
+</div>
+
+
+        </div>
+        <div class="flex items-center pt-8 justify-center">
+          <div class="relative bg-opacity-150 hover:bg-orange-900  grid h-[24rem] shadow-2xl  w-full max-w-[28rem] flex-col items-end justify-center overflow-hidden rounded-xl    text-gray-700">
+            <div class="absolute inset-0 m-0 h-full w-full overflow-hidden rounded-none   bg-center text-gray-700 shadow-xl ">
+              
+            </div>
+            <div class="relative p-6 py-14 px-6 md:px-12">
+              <h2 class="mb-6 block font-sans text-xl font-medium leading-[1.5] tracking-normal text-white antialiased">
+                “KRS and our team at Georgia Main Food Group collaborated to create one of the finest grocery stores in the world. Period.”
+              </h2>
+              <div class="flex justify-between">
+                <p>
+                  <h5 class="mb-4 block font-sans text-xl font-semibold leading-snug tracking-normal text-gray-400 antialiased">
+                    Tania Andrew <br>
+                    <span>Assistant director</span>
+                  </h5>
+                </p>
+                <img
+                  alt="tania andrew"
+                  src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1480&amp;q=80"
+                  class="relative inline-block h-[74px] w-[74px] rounded-full border-2 border-white object-cover object-center"
+                />
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+   </div>
+  
+
+  <!-- Slider end -->
+
+
+  <!--Servicess start -->
+
+ <div class=" w-full h-full">
+  <div class="pt-8 bg-slate-300 ">
+
+    <div>
+      <p class="text-3xl text-orange-800 text-center mx-auto ">Retail Design, Fabrication & Installation Services</p>
+      <p class="text-xl flex items-center justify-center text-center mt-12 text-black  px-10 ">KRS develops retail brand strategy and environmental design
+         through to custom build and install services. We regularly step in
+          to provide a la carte services for our clients where and how they need us.
+           But what we really specialize in is owning the entire process, trouble-shooting issues
+            as they arise, and seeing designs through to rollout. At KRS, you
+        
+ dictate how you need it and we find a way to get it done beautifully, efficiently, and within budget.</p>
+    </div>
+
+
+    <section id="blog" class="flex justify-center items-center flex-col p-[40px] border-b-2 border-solid border-black">
+
+     
+      <div class="blog-container flex justify-center items-center mx-[40px] flex-wrap">
+  
+  
+        <div class="blog-box w-[300px] bg-white border border-solid border-gray-500 m-[20px]">
+  
+          <div class="relative overflow-hidden bg-cover bg-no-repeat">
+            <img
+              src="image/1.jpg"
+              class=" transition duration-300 ease-in-out w-full hover:scale-110"
+              alt="Louvre" />
+          </div>
+  
+          <div class=" flex blog-text flex-col">
+           
+            <a href="" class="text-black-900 p-[20px] bg-orange-600 hover:bg-blue-950 hover:text-white">Design</a>
+  
+          </div>
+  
+        </div>
+  
+  
+  <!--second-->
+
+ 
+  
+  <!--third-->
+  
+  
+
+
+
+  
+  
+  
+  <div class="blog-box w-[300px] bg-white border border-solid border-gray-500 m-[20px]">
+  
+    <div class="relative overflow-hidden bg-cover bg-no-repeat">
+      <img
+        src="image/1.jpg"
+        class=" transition duration-300 ease-in-out w-full hover:scale-110"
+        alt="Louvre" />
+    </div>
+
+    <div class=" flex blog-text flex-col">
+     
+      <a href="" class="text-black-900 p-[20px] bg-orange-600 hover:bg-blue-950 hover:text-white">Municipal Approval</a>
+
+    </div>
+
+  </div>
+
+  <div class="blog-box w-[300px] bg-white border border-solid border-gray-500 m-[20px]">
+  
+    <div class="relative overflow-hidden bg-cover bg-no-repeat">
+      <img
+        src="image/1.jpg"
+        class=" transition duration-300 ease-in-out w-full hover:scale-110"
+        alt="Louvre" />
+    </div>
+
+    <div class=" flex blog-text flex-col">
+     
+      <a href="" class="text-black-900 p-[20px] bg-orange-600 hover:bg-blue-950 hover:text-white">Renovation and Remodeling</a>
+
+    </div>
+
+  </div>
+
+
+  <div class="blog-box w-[300px] bg-white border border-solid border-gray-500 m-[20px]">
+  
+    <div class="relative overflow-hidden bg-cover bg-no-repeat">
+      <img
+        src="image/1.jpg"
+        class=" transition duration-300 ease-in-out w-full hover:scale-110"
+        alt="Louvre" />
+    </div>
+
+    <div class=" flex blog-text flex-col">
+     
+      <a href="" class="text-black-900 p-[20px] bg-orange-600 hover:bg-blue-950 hover:text-white">Equipment</a>
+
+    </div>
+
+  </div>
+  
+  </div>
+  
+      </div>
+  
+    </section>
+  
+  
+  
+
+  </div>
+ </div>
+
+
+    <!--Servicess end -->
+
+
+
+
+ 
+
+
+
+
+
+
+
+<!--Expertice  page-->
+
+
+
+<div>
+  <div class="relative h-[100vh]">
+    <div class="bg-[url('image/1.jpg')] bg-no-repeat bg-center bg-cover h-[100%]"></div>
+    <div class="absolute inset-0 bg-black opacity-50"></div>
+    <div class="absolute inset-0 text center">
+      <p class="text-center text-6xl text-orange-800 m-8 ">Our Expertise Here</p>
+      <div class="flex flex-wrap justify-center items-center gap-4 mx-[40px]">
+        <div class="blog-box w-[250px] bg-white border border-solid border-gray-500 h-[20vh] ">
+  
+          <div class="relative overflow-hidden bg-cover bg-no-repeat">
+            <img
+              src="image/1.jpg"
+              class=" transition duration-300 ease-in-out w-full hover:scale-110"
+              alt="Louvre" />
+          </div>
+      
+          <div class=" flex blog-text text-center flex-col">
+           
+            <a href="" class="text-black-900 p-[10px] text-white bg-orange-600 hover:bg-blue-950 hover:text-white">Equipment</a>
+      
+          </div>
+      
+        </div>
+        <div class="blog-box w-[250px] bg-white border border-solid border-gray-500 h-[20vh] ">
+  
+          <div class="relative overflow-hidden bg-cover bg-no-repeat">
+            <img
+              src="image/1.jpg"
+              class=" transition duration-300 ease-in-out w-full hover:scale-110"
+              alt="Louvre" />
+          </div>
+      
+          <div class=" flex blog-text text-center flex-col">
+           
+            <a href="" class="text-black-900 p-[10px] text-white bg-orange-600 hover:bg-blue-950 hover:text-white">Equipment</a>
+      
+          </div>
+      
+        </div>
+        <div class="blog-box w-[250px] bg-white border border-solid border-gray-500 h-[20vh] ">
+  
+          <div class="relative overflow-hidden bg-cover bg-no-repeat">
+            <img
+              src="image/1.jpg"
+              class=" transition duration-300 ease-in-out w-full hover:scale-110"
+              alt="Louvre" />
+          </div>
+      
+          <div class=" flex blog-text text-center flex-col">
+           
+            <a href="" class="text-black-900 p-[10px] text-white bg-orange-600 hover:bg-blue-950 hover:text-white">Equipment</a>
+      
+          </div>
+      
+        </div>
+        <div class="blog-box w-[250px] bg-white border border-solid border-gray-500 h-[20vh] ">
+  
+          <div class="relative overflow-hidden bg-cover bg-no-repeat">
+            <img
+              src="image/1.jpg"
+              class=" transition duration-300 ease-in-out w-full hover:scale-110"
+              alt="Louvre" />
+          </div>
+      
+          <div class=" flex blog-text text-center flex-col">
+           
+            <a href="" class="text-black-900 p-[10px] text-white bg-orange-600 hover:bg-blue-950 hover:text-white">Equipment</a>
+      
+          </div>
+      
+        </div>
+        <div class="blog-box w-[250px] bg-white border border-solid border-gray-500 h-[20vh] ">
+  
+          <div class="relative overflow-hidden bg-cover bg-no-repeat">
+            <img
+              src="image/1.jpg"
+              class=" transition duration-300 ease-in-out w-full hover:scale-110"
+              alt="Louvre" />
+          </div>
+      
+          <div class=" flex blog-text text-center flex-col">
+           
+            <a href="" class="text-black-900 p-[10px] text-white bg-orange-600 hover:bg-blue-950 hover:text-white">Equipment</a>
+      
+          </div>
+      
+        </div>
+        
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+<!--Expartise end-->
+
+
+
+
+  
+ 
+  <!--contact page start-->
+
+
+  
+
+    <!--contact page end-->
+
+ <script>
+
+
+
+    const mobileMenuButton = document.querySelector('[aria-controls="mobile-menu"]');
+const mobileMenu = document.getElementById('mobile-menu');
+const userMenuButton = document.getElementById('user-menu-button');
+const userMenu = document.querySelector('[aria-labelledby="user-menu-button"]');
+
+// Toggle mobile menu
+mobileMenuButton.addEventListener('click', () => {
+  const isExpanded = mobileMenuButton.getAttribute('aria-expanded') === 'true';
+  mobileMenuButton.setAttribute('aria-expanded', !isExpanded);
+  mobileMenu.classList.toggle('hidden', isExpanded);
+});
+
+// Toggle user menu
+userMenuButton.addEventListener('click', () => {
+  const isExpanded = userMenuButton.getAttribute('aria-expanded') === 'true';
+  userMenuButton.setAttribute('aria-expanded', !isExpanded);
+  userMenu.classList.toggle('hidden', isExpanded);
+});
+
+// Close user menu when clicking outside
+document.addEventListener('click', (event) => {
+  if (
+    !userMenuButton.contains(event.target) &&
+    !userMenu.contains(event.target)
+  ) {
+    userMenuButton.setAttribute('aria-expanded', 'false');
+    userMenu.classList.add('hidden');
+  }
+});
+
+// Close mobile menu when clicking outside
+document.addEventListener('click', (event) => {
+  if (
+    !mobileMenuButton.contains(event.target) &&
+    !mobileMenu.contains(event.target)
+  ) {
+    mobileMenuButton.setAttribute('aria-expanded', 'false');
+    mobileMenu.classList.add('hidden');
+  }
+});
+
+</script>
+
+<script>
+  const dropdowns = document.querySelectorAll('.relative');
+
+  dropdowns.forEach((dropdown) => {
+      let timeout;
+
+      dropdown.addEventListener('mouseenter', () => {
+          clearTimeout(timeout);
+          const dropdownMenu = dropdown.querySelector('.absolute');
+          dropdownMenu.classList.remove('hidden');
+      });
+
+      dropdown.addEventListener('mouseleave', () => {
+          const dropdownMenu = dropdown.querySelector('.absolute');
+          timeout = setTimeout(() => {
+              dropdownMenu.classList.add('hidden');
+          }, 1000); // Adjust the delay time (in milliseconds) as needed
+      });
+
+      dropdown.querySelector('.absolute').addEventListener('mouseenter', () => {
+          clearTimeout(timeout);
+      });
+
+      dropdown.querySelector('.absolute').addEventListener('mouseleave', () => {
+          const dropdownMenu = dropdown.querySelector('.absolute');
+          timeout = setTimeout(() => {
+              dropdownMenu.classList.add('hidden');
+          }, 1000); // Adjust the delay time (in milliseconds) as needed
+      });
+  });
+</script>
+
+
   </body>
 </html>

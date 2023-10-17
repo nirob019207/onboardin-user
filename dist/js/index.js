@@ -1,52 +1,29 @@
-let list = document.querySelectorAll('.navigation li');
 
-function activeLink() {
-    list.forEach((item) => item.classList.remove('hovered'));
-    this.classList.add('hovered');
-}
+const dropdownButton = document.getElementById("dropdown-button");
+const dropdownMenu = document.getElementById("dropdown-menu");
 
-list.forEach((item) => item.addEventListener('click', activeLink));
-
-// Prevent default link behavior
-list.forEach((item) => item.addEventListener('click', function (e) {
-    e.preventDefault();
-}));
-
-let toggle = document.querySelector('.toggle');
-let navigation = document.querySelector('.navigation');
-let main = document.querySelector('.main');
-
-
-toggle.onclick = function () {
-  navigation.classList.toggle('active');
-  main.classList.toggle('active');
-
-  
-
-  
-}
-document.addEventListener("DOMContentLoaded", function() {
-  const icons = document.querySelectorAll(".icon");
-  
-  icons.forEach(icon => {
-      icon.addEventListener("click", function() {
-          icons.forEach(icon => {
-              icon.classList.remove("active-item", "active-item-opposite");
-          });
-          this.classList.add("active-item", "active-item-opposite");
-      });
-  });
+dropdownButton.addEventListener("click", function(event) {
+    event.stopPropagation(); // Prevent event propagation
+    if (dropdownMenu.classList.contains("hidden")) {
+        dropdownMenu.classList.remove("hidden");
+    } else {
+        dropdownMenu.classList.add("hidden");
+    }
 });
 
+// Close the dropdown if the user clicks outside of it
+document.addEventListener("click", function(event) {
+    if (event.target !== dropdownButton && event.target !== dropdownMenu) {
+        dropdownMenu.classList.add("hidden");
+    }
+});
 
-//drop down
-document.addEventListener("DOMContentLoaded", function() {
-  const arrowIcon = document.querySelector(".arrow-icon");
-  const dropdown = document.querySelector(".dropdown");
-  const topColor = document.querySelector(".top-color");
-  
-  arrowIcon.addEventListener("click", function() {
-      dropdown.classList.toggle("active");
-      topColor.classList.toggle("active");
+document.addEventListener("DOMContentLoaded", function () {
+  const mobileMenuButton = document.getElementById("mobile-menu-button");
+  const mobileMenu = document.getElementById("mobile-menu");
+
+  mobileMenuButton.addEventListener("click", function () {
+    console.log("clicked")
+      mobileMenu.classList.toggle("hidden");
   });
 });

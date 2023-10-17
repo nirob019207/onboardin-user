@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/style.css"> <!-- Your custom styles can be included here -->
+    <link rel="stylesheet" href="output.css" />
+    <link rel="stylesheet" href="css/style.css" />
+ 
+    <title>Mega Menu Dropdown - Tailwind CSS</title>
+</head>
+<body class="">
+    <header class="fixed top-0 w-full bg-white shadow-lg">
+        <div class="container mx-auto">
+            <nav class="navigation flex items-center justify-between h-16">
+                <a href="#!" class="logo">
+                    <img src="image/logo.png" alt="Logo" class="w-44" />
+                </a>
+                <div class="hidden lg:block">
+                    <ul class="nav_menu flex space-x-6">
+                        <li class="nav_list relative group">
+                            <a href="#!" class="transition-all uppercase duration-300 ease-in-out border-b-2 border-b-transparent group-hover:border-b-black py-3">
+                                Why DUNKWAR
+                            </a>
+                        </li>
+                        <li class="nav_list relative group">
+                            <a href="#!" id="dropdown-button" class="transition-all uppercase duration-300 ease-in-out border-b-2 border-b-transparent group-hover:border-b-black py-3">
+                                PRODUCTS
+                            </a>
+                            <div id="dropdown-menu" class="hidden absolute top-16 left-0 right-0 mt-2 py-2 bg-white border rounded-lg shadow-lg w-auto min-w-[1200px] transform -translate-x-1/2 left-1/2">
+                                <div id="mega-menu-full-dropdown" class="mt-1 bg-white border-gray-200 shadow-sm border-y dark:bg-gray-800 dark:border-gray-600">
+                                    <div class="grid max-w-screen-xl px-4 py-5 mx-auto text-gray-900 dark:text-white sm:grid-cols-2 md:grid-cols-3 md:px-6">
+                                        <ul aria-labelledby="mega-menu-full-dropdown-button">
+                                            <li>
+                                                <a href="#" class="block p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700">
+                                                    <div class="font-semibold">Online Stores</div>
+                                                    <span class="text-sm text-gray-500 dark:text-gray-400">Connect with third-party tools that you're already using.</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="block p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700">
+                                                    <div class="font-semibold">Segmentation</div>
+                                                    <span class="text-sm text-gray-500 dark:text-gray-400">Connect with third-party tools that you're already using.</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="block p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700">
+                                                    <div class="font-semibold">Marketing CRM</div>
+                                                    <span class="text-sm text-gray-500 dark:text-gray-400">Connect with third-party tools that you're already using.</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        <ul>
+                                            <li>
+                                                <a href="#" class="block p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700">
+                                                    <div class="font-semibold">Online Stores</div>
+                                                    <span class="text-sm text-gray-500 dark:text-gray-400">Connect with third-party tools that you're already using.</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="block p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700">
+                                                    <div class="font-semibold">Segmentation</div>
+                                                    <span class="text-sm text-gray-500 dark:text-gray-400">Connect with third-party tools that you're already using.</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="block p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700">
+                                                    <div class="font-semibold">Marketing CRM</div>
+                                                    <span class="text-sm text-gray-500 dark:text-gray-400">Connect with third-party tools that you're already using.</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        <ul class="hidden md:block">
+                                            <li>
+                                                <a href="#" class="block p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700">
+                                                    <div class="font-semibold">Audience Management</div>
+                                                    <span class="text-sm text-gray-500 dark:text-gray-400">Connect with third-party tools that you're already using.</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="block p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700">
+                                                    <div class="font-semibold">Creative Tools</div>
+                                                    <span class="text-sm text-gray-500 dark:text-gray-400">Connect with third-party tools that you're already using.</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="block p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700">
+                                                    <div class="font-semibold">Marketing Automation</div>
+                                                    <span class="text-sm text-gray-500 dark:text-gray-400">Connect with third-party tools that you're already using.</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                            </div>
+                        </li>
+                        <li class="nav_list">
+                            <a href="#!" class="relative group">
+                                <span class="transition-all uppercase duration-300 ease-in-out border-b-2 border-b-transparent group-hover:border-b-black py-3">
+                                    Solution
+                                </span>
+                            </a>
+                        </li>
+                        <li class="nav_list">
+                            <a href="#!" class= "relative group">
+                                <span class="transition-all uppercase duration-300 ease-in-out border-b-2 border-b-transparent group-hover:border-b-black py-3">
+                                    Company
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="nav_action flex space-x-6">
+                    <a href="#!" class="btn">Log in</a>
+                    <a href="#!" class="btn-primary">Sign up</a>
+                    <div class="nav_toggle block xs:block sm:block md:hidden lg:hidden xl:hidden">
+                       <img src="image/menu.png" alt="" id="mobile-menu-button">
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <div id="mobile-menu" class="hidden fixed top-0 left-0 w-screen h-screen bg-white z-50">
+        <!-- Your mobile menu content here -->
+        <ul class="p-4">
+            <li><a href="#!">Mobile Menu Item 1</a></li>
+            <li><a href="#!">Mobile Menu Item 2</a></li>
+            <li><a href="#!">Mobile Menu Item 3</a></li>
+        </ul>
+    </div>
+
+
+    <script>
+     
+    </script>
+    
+    <script src="js/index.js"></script>
+</body>
+</html>
